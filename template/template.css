@@ -1,0 +1,200 @@
+body{
+    margin: 0px;
+    background-image: linear-gradient(to bottom, #9370DB, #e4e5e6 80%);
+    font-family: sans-serif;
+    overflow-x: hidden;
+
+}
+
+
+header{
+    background-color:	#9385f1;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0px 4px 8px white;
+}
+
+.container{
+    width: 60vw;
+    display: flex;
+    margin: 0 auto;
+}
+
+header .container{
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 160px;
+    padding-right: 600px;
+
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+
+    /* margin-left: 300px; */
+    align-items: center;
+    padding: 0;
+}
+
+.navbar li{
+    display: flex;
+}
+
+.navbar li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    margin-right: 3vw;
+}
+
+.navbar li :hover{
+    color: yellow;
+    font-size: 1.2em;
+    transition: 0.6s;
+}
+
+.navbar li :active{
+    color: #8B008B;
+    font-size: 1.1em;
+    transition: 0.2s;
+}
+
+
+.banner img{
+    margin-top: 150px;
+    width: 30vw;
+    height: 65vh;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-left-width: 7px ;
+    border-left-style: solid;
+    border-left-color: gray;
+}
+
+.conteudo_central{
+    background-color: #ffffff;
+    height: 65vh;
+    width: 30vw;
+    margin-top: 150px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-right-width: 7px ;
+    border-right-style: solid;
+    border-right-color: gray;
+
+    padding: 8px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+main {
+/*  BARRINHAS DO FUNDO
+
+    background-image: url(img-site/Group5.png);
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-size:99vw; */
+    height: 100vh;
+}
+
+footer{
+    background-color: #363636;
+    width: 100vw;
+    height: 45vh;
+    display: flex
+}
+
+.conteudo_footer{
+    color: white;
+    display: flex;
+    position: relative;
+}
+
+.conteudo_footer a{
+    font-style: italic;
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.titulos_footer{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+
+.fale_conosco{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    padding-left: 5vw;
+}
+
+.barra{
+    width: 12vw;
+    height: 0.5vh;
+    background-color: #61CBED;
+    align-self: center;
+    margin-bottom: 5%;
+}
+
+
+.sac{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    padding-left: 9vw;
+}
+
+
+.logo_footer{
+   position: absolute;
+   margin-left: 44vw;
+}
+
+.logo_footer img{
+    width: 15vw;
+    height: 25vh;
+    align-items: center;
+}
+
+ .logo_footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 200;
+    font-style: italic;
+    margin-top: 7vh;
+    margin-left: -1vw;
+} 
+
+.redes_socias{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    padding-left: 23vw;
+}
+
+
+.conteudos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    padding-left: 8vw;
+}
+
+
