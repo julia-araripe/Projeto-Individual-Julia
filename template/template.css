@@ -79,19 +79,21 @@ header .container{
 
 .conteudo_central{
     background-color: #ffffff;
-    height: 62.4vh;
+    height: 58.5vh;
     width: 40vw;
-    padding: 8px;
+    padding: 20px;
+    line-height: 27px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
     margin-top: 150px;
+
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-right-width: 7px ;
     border-right-style: solid;
     border-right-color: gray;
-
-    font-weight: 550;
-
 }
+
 
 .banner{
     display: flex;
