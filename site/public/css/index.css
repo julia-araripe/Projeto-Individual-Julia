@@ -108,11 +108,55 @@ main {
     height: 100vh;
 }
 
+.polaroids {
+    display: flex;
+    font-size: 0;
+
+    margin-top: 15%;
+}
+
+#div-monica img {
+    height: 60%;
+}
+/* #div-rachel img {
+    height: 5px;
+    width: 5px;
+    float: right;
+    font-size: 0;
+}
+#div-phoebe img {
+    height: 5px;
+    width: 5px;
+    float: right;
+    font-size: 0;
+}
+#div-chandler img {
+    height: 5px;
+    width: 5px;
+    float: right;
+    font-size: 0;
+}
+#div-ross img {
+    height: 5px;
+    width: 5px;
+    float: right;
+    font-size: 0;
+}
+#div-joey img {
+    height: 5px;
+    width: 5px;
+    float: right;
+    font-size: 0;
+    margin-bottom: 100px;
+} */
+
 footer{
     background-color: #363636;
     width: 100vw;
     height: 40vh;
-    display: flex
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .conteudo_footer{
