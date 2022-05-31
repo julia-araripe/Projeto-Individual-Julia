@@ -3,12 +3,11 @@ body{
     background-image: linear-gradient(to bottom, #e4e5e6, #9370db 80%);
     font-family: sans-serif;
     overflow-x: hidden;
-
 }
 
 
-header{
-    background-color:	#9385f1;
+.header{
+    background-color:#9385f1;
     display: flex;
     position: fixed;
     width: 100vw;
@@ -28,8 +27,7 @@ header .container{
 
 .logo img{
     width: 160px;
-    padding-right: 600px;
-
+    padding-right: 450px;
 }
 
 .navbar{
@@ -155,24 +153,19 @@ footer{
     margin-bottom: 5%;
 }
 
-
-/* .sac{
-    display: flex;
-    flex-direction: column;
-    padding-top: 5vh;
-    padding-left: 5vw;
-} */
-
-
 .logo_footer{
    position: absolute;
    margin-left: 44vw;
+
 }
 
 .logo_footer img{
     width: 15vw;
     height: 25vh;
     align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
  .logo_footer p{
@@ -183,16 +176,8 @@ footer{
     font-weight: 200;
     font-style: italic;
     margin-top: 7vh;
-    margin-left: -1vw;
+    /* margin-left: -1vw; */
 } 
-
-/* .redes_socias{
-    display: flex;
-    flex-direction: column;
-    padding-top: 5vh;
-    padding-left: 15vw;
-} */
-
 
 .conteudos{
     display: flex;

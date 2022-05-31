@@ -1,24 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
+body{
+  margin: 0px;
+  background-image: linear-gradient(to bottom, #e4e5e6, #9370db 80%);
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
+
+.header{
+  background-color:	#9385f1;
   display: flex;
+  position: fixed;
+  width: 100vw;
+  box-shadow: 0px 4px 8px white;
 }
 
-.header {
-  border-bottom: 3px solid #32b9cd;
+.container{
+  width: 60vw;
+  display: flex;
+  margin: 0 auto;
 }
 
-.header .container {
-  justify-content: space-between;
+header .container{
+  align-items: center;
+  justify-content: center;
 }
 
 .header a {
@@ -30,20 +36,40 @@ body {
   font-weight: 800;
 }
 
-.navbar {
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  color: #e3b062;
+.logo img{
+  width: 160px;
+  padding-right: 450px;
 }
 
+.navbar{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
 
-.titulo {
-  color: #32b9cd;
-  width: fit-content;
-  font-weight: 500;
+.navbar li{
+  display: flex;
+}
+
+.navbar li a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 3vw;
+}
+
+.navbar li :hover{
+  color: yellow;
+  font-size: 1.2em;
+  transition: 0.6s;
+}
+
+.navbar li :active{
+  color: #8B008B;
+  font-size: 1.1em;
+  transition: 0.2s;
 }
 
 
@@ -53,11 +79,12 @@ body {
   height: fit-content;
   padding: 40px 0;
   color: white;
-  background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
+  background-image: url(".././img-site/milkshake-friends.jpg");
   background-size: cover;
 }
 
 .banner .container {
+  margin-top: 100px;
   height: 400px;
   font-size: 36px;
   justify-content: center;
@@ -119,32 +146,100 @@ body {
 }
 
 
+
 /* FOOTER */
 
-.footer {
-  background-color: #32b9cd;
-  height: 150px;
-  color: #fff;
-  display: flex;
-  font-size: 15px;
+footer{
+  background-color: #363636;
+  width: 100vw;
+  height: 45vh;
+  display: flex
 }
 
-.footer .container {
-  justify-content: center;
+.conteudo_footer{
+  color: white;
+  display: flex;
+  position: relative;
 }
+
+.conteudo_footer a{
+  font-style: italic;
+  font-size: 0.8em;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.titulos_footer{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+
+
+.abertura{
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+  padding-left: 10vw;
+}
+
+.barra{
+  width: 12vw;
+  height: 0.5vh;
+  background-color: #6f36d8;
+  align-self: center;
+  margin-bottom: 5%;
+}
+
+.logo_footer{
+ position: absolute;
+ margin-left: 44vw;
+}
+
+.logo_footer img{
+  width: 15vw;
+  height: 25vh;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo_footer p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 200;
+  font-style: italic;
+  margin-top: 7vh;
+  margin-left: -1vw;
+} 
+
+.conteudos{
+  display: flex;
+  flex-direction: column;
+  padding-top: 6vh;
+  padding-left: 40vw;
+}
+
 
 
 /* LOGIN */
 
 .banner .container .card {
-  background-color: #e5e5e5;
+  background-color: white;
   height: fit-content;
   width: 400px;
+  opacity: .8;
   display: flex;
   flex-direction: column;
-  color: palevioletred;
+  color: #9370db;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 15px;
 }
 
 .card {
@@ -218,7 +313,7 @@ input {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #e6005a;
+  background-color: #8B008B;
   width: 120px;
   align-self: center;
   margin-top: 5px;
