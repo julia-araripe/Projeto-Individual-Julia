@@ -15,6 +15,7 @@ body{
   width: 100vw;
   box-shadow: 0px 4px 8px white;
   z-index: 1;
+  height: 14vh;
 }
 
 .container{
@@ -28,14 +29,14 @@ header .container{
   justify-content: center;
 }
 
-.header a {
+/* .header a {
   text-decoration: none;
   color: #e3b062;
 }
 
 .agora {
   font-weight: 800;
-}
+} */
 
 .logo img{
   width: 160px;
