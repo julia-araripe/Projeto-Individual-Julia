@@ -25,7 +25,7 @@
     <div class="header">
         <div class="container">
             <div class="logo">
-                <img src="img-site/friendslogo.png" alt="">
+                <a href="index.html"><img src="img-site/friendslogo.png" alt=""></a>
             </div>
             <ul class="navbar">
                 <li>
@@ -122,7 +122,7 @@
 
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            mensagem_erro.innerHTML = "Por favor, preencha todos os campos para efetuar o login!";
             finalizarAguardar();
             return false;
         }
@@ -156,6 +156,7 @@
                     sessionStorage.NOME_USUARIO = json.nome;
                     sessionStorage.ID_USUARIO = json.id;
 
+                    // LEVAR PARA AQUI
                     setTimeout(function () {
                         window.location = "./dashboard/cards.html";
                     }, 1000); // apenas para exibir o loading

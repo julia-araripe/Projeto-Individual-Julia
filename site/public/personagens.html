@@ -1,25 +1,131 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/tela-home.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/personagem.css">
     <link rel="shortcut icon" href="img-site/moldura-site.png" type="image/x-icon" />
+
     <title>FRIENDS | PERSONAGENS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+
+    <script src="./js/funcoes.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link href="@font-face {
+        font-family: 'Gregor Miller's Friends Font';
+        src: url('http://www.fontsaddict.com/fontface/gregor-millers-friends-font.TTF');
+      }">
+
+
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> -->
 </head>
+
 <body>
     <div class="header">
         <div class="container">
             <div class="logo">
-                <img src="img-site/friendslogo.png" alt="">
+                <a href="index.html"><img src="img-site/friendslogo.png" alt=""></a>
             </div>
             <ul class="navbar">
-                <li><a href="tela-home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="personagens.html">Personagens</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
             </ul>
         </div>
     </div>
+    <div class="banner">
+        <!-- <img src="img-site/Friends.jpg">
+        <div class="conteudo_central"><i>Friends</i> é uma série americana em formato de Sitcom, criada por David Crane
+            e Marta Kauffman, que durou 10 anos, com seu primeiro episódio no dia <b>22 de setembro de 1994</b> e seu
+            último episódio no dia <b>6 de maio de 2004</b>.
+            <i>Friends</i> conta com 6 personagens principais, (da esquerda para direita) Ross Geler, Rachel Green,
+            Monica Geller, Chandler Bing, Phoebe Buffay e Joey Tribbiani, que vivem suas vidas na cidade grande de Nova
+            York.
+            Rachel é a garota mimada que deixa o noivo no altar para viver com a amiga dos tempos de escola, Monica,
+            sistemática e apaixonada pela culinária. Monica é irmã de Ross, um paleontólogo que é abandonado pela
+            esposa, que descobriu ser lésbica. De frente ao apartamento de Monica e Rachel, moram Joey, um ator
+            frustrado, e Chandler, de profissão misteriosa. E Phoebe, que é massagista e antiga colega de quarto de
+            Monica.
+        </div> -->
+    </div>
+
+    <!-- <div class="polaroids"> -->
+
+    <div class="branco1">
+        <div id="div-monica"> <img src="img-site/Monica-Polaroid.png">
+            <p id="p_monica">Olá gente sou a Monica I KNOW Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div> <br>
+    </div>
+
+    <div id="div-rachel"> <img src="img-site/Rachel-Polaroid.png">
+        <p id="p_rachel">Olá gente sou a Rachel aaaaaaaaa Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+    </div> <br>
+
+    <div id="div-phoebe"> <img src="img-site/Phoebe-Polaroid.png">
+        <p id="p_phoebe">Olá gente eu sou a Phoebe Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div> <br>
+
+    <!-- </div>
+    <div class="polaroids2"> -->
+
+
+    <div id="div-chandler"> <img src="img-site/Chandler-Polaroid.png">
+        <p id="p_chandler">Olá gente eu sou o Chandler Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+
+    <div id="div-ross"> <img src="img-site/Ross-Polaroid.png">
+        <p id="p_ross">Olá gente eu sou o Ross Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+
+    <div id="div-joey"> <img src="img-site/Joey-Polaroid.png">
+        <p id="p_joey">Olá gente eu sou o Joey Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+
+
+    <!-- </div> -->
+
+
+
+    <!-- <div class="final">
+        FRIENDS 1994 - 2004 - 2021
+    </div> -->
+
+
+
+    <!-- <main>
+        Colocar todo conteudo do "meio" do site aqui dentro 
+    </main> -->
+
+    <footer>
+        <div class="conteudo_footer">
+            <div class="abertura">
+                <p class="titulos_footer">Abertura de Friends</p>
+                <div class="barra"></div>
+                <a><iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/track/15tHagkk8z306XkyOHqiip?utm_source=generator"
+                        width="100%" height="80" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></a>
+            </div>
+
+            <div class="logo_footer">
+                <img src="img-site/moldura-frase.png" alt="">
+                <p id="p_footer">Friends • I'll be there for you •</p>
+            </div>
+
+            <div class="conteudos">
+                <p class="titulos_footer">Páginas</p>
+                <div class="barra"></div>
+                <a href="index.html">Home</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="login.html">Login</a>
+                <a href="personagens.html">Personagens</a>
+            </div>
+        </div>
+    </footer>

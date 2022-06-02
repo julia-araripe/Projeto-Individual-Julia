@@ -25,7 +25,7 @@
     <div class="header">
         <div class="container">
             <div class="logo">
-                <img src="img-site/friendslogo.png" alt="">
+                <a href="index.html"><img src="img-site/friendslogo.png" alt=""></a>
             </div>
             <ul class="navbar">
                 <li>
@@ -134,7 +134,7 @@
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            mensagem_erro.innerHTML = "Por favor, preencha todos os campos para efetuar o cadastro!";
 
             finalizarAguardar();
             return false;

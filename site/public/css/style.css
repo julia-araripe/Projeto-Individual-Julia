@@ -38,9 +38,12 @@ header .container{
   font-weight: 800;
 } */
 
-.logo img{
-  width: 160px;
+.logo img {
+  width: 186px;
+  height: 140px;
   padding-right: 450px;
+  margin-left: -85px;
+  margin-top: -15px;
 }
 
 .navbar{
@@ -111,7 +114,7 @@ header .container{
 
 /* missao visao valores */
 
-.social {
+/* .social {
   background-color: #e5e5e5;
   display: flex;
 }
@@ -145,7 +148,7 @@ header .container{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 
 
@@ -278,9 +281,11 @@ button {
   width: 230px;
   position: fixed;
   border-radius: 4px;
-  border: #e6005a 3px solid;
+  border: #7700e6 4px solid;
   padding: 10px;
-  margin-right: 10%;
+  margin-right: 40%;
+  margin-top: 1%;
+  z-index: 1;
 }
 
 .card_erro #mensagem_erro{
@@ -300,7 +305,7 @@ button {
 
 input {
   margin-bottom: 10px;
-  border: 2px solid #32b9cd;
+  border: 2px solid #9373dd;
   padding: 10px;
   text-align: center;
   border-radius: 10px;
@@ -333,6 +338,12 @@ input {
 
 /* PAGINA DOS GRÁFICOS */
 
+.logo img {
+  height: 20vh;
+  margin-left: 35%;
+  margin-top: 15px;
+}
+
 .janela {
   display: flex;
   width: 100vw;
@@ -355,9 +366,10 @@ input {
   justify-content: space-evenly;
   align-items: center;
   border-right: 3px solid #32b9cd;
-  background-color: #212124;
+  background-color: #9385f1;
   /* border: 3px solid pink; */
 }
+  /* background-color: #895fc0; */
 
 .dash-right {
   display: flex;
@@ -380,7 +392,7 @@ input {
 }
 
 .hello h3 {
-  color: #e3b062;
+  color: white;
   font-weight: 300;
   font-size: 1.2rem;
 }
@@ -392,7 +404,7 @@ input {
 .btn-nav {
   width: 40%;
   color: white;
-  background-color: #e6005a;
+  background-color:	#8A2BE2;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
@@ -401,14 +413,14 @@ input {
 .btn-nav-white {
   width: 40%;
   background-color: white;
-  border: 3px solid #e6005a;
+  border: 3px solid 	#8A2BE2;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
 }
 
 .btn-nav-white h3 {
-  color: #e6005a;
+  color: 	#8A2BE2;
   padding: 0;
   margin: 0;
 }
@@ -423,7 +435,7 @@ input {
   margin: 0;
   padding: 0;
   width: 20%;
-  background-color: #32b9cd;
+  background-color: rgb(214, 214, 0);
   color: white;
   border-radius: 10px;
   text-align: center;

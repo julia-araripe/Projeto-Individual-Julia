@@ -69,7 +69,7 @@ header .container{
 }
 
 
-.banner img{
+/* .banner img{
     margin-top: 150px;
     width: 40vw;
     height: 65vh;
@@ -95,13 +95,13 @@ header .container{
     border-right-width: 7px ;
     border-right-style: solid;
     border-right-color: gray;
-}
+} 
 
 
 .banner{
     display: flex;
     justify-content: center;
-}
+} */
 
 main {
 /*  BARRINHAS DO FUNDO
@@ -113,51 +113,128 @@ main {
     height: 100vh;
 }
 
-.polaroids {
+/* .polaroids {
     display: flex;
-    font-size: 0;
-    margin-top: 5%;
+    margin-top: 0;
     padding-left: 55px;
-}
+    padding-top: 100px;
+} */
 
+/* .branco1{
+    background-color: white;
+    height: 10px;
+    width: 100vw;
+} */
 #div-monica img {
     height: 60%;
+    position: absolute;
+    margin-left: 2.5%;
+    margin-top: 10%;
 }
-#div-rachel img {
+#p_monica{
+    background-color: #f0f4f5a1;
     height: 60%;
-    float: right;
-    font-size: 0;
-    margin-left: -115px;
-}
-#div-phoebe img {
-    height: 60%;
-    float: right;
-    font-size: 0;
-    margin-left: 60px;
+    position: absolute;
+    margin-left: 23.2%;
+    margin-top: 10%;
+    height: 34vh;
+    width: 70vw;
+    padding: 30px;
 }
 
-.polaroids2 {
+#div-rachel img {
+    height: 60%;
+    margin-left: 78.5%;
+    position: absolute;
+    margin-top: 40%;
+}
+#p_rachel{
+    background-color: #f0f4f5a1;
+    height: 60%;
+    position: absolute;
+    margin-left: 3.1%;
+    margin-top: 40%;
+    height: 34vh;
+    width: 70vw;
+    padding: 30px;
+}
+
+#div-phoebe img {
+    height: 60%;
+    margin-left: 2.5%;
+    margin-top: 70%;
+    position: absolute;
+}
+#p_phoebe{
+    background-color: #f0f4f5a1;
+    height: 60%;
+    position: absolute;
+    margin-left: 23.3%;
+    margin-top: 70%;
+    height: 34vh;
+    width: 70vw;
+    padding: 30px;
+}
+
+/* .polaroids2 {
     display: flex;
     font-size: 0;
     padding-right: -55px;
     margin-top: -15%;
-}
+} */
 
 #div-chandler img {
     height: 60%;
-    margin-left: 55px;
+    margin-left: 78%;
+    position: absolute;
+    margin-top: 100%;
 }
+#p_chandler{
+    background-color: #f0f4f5a1;
+    height: 60%;
+    position: absolute;
+    margin-left: 2.7%;
+    margin-top: 100%;
+    height: 34vh;
+    width: 70vw;
+    padding: 30px;
+}
+
 #div-ross img {
     height: 60%;
     float: right;
     font-size: 0;
-    margin-left: -115px;
+    margin-left: 2.5%;
+    position: absolute;
+    margin-top: 130%;
 }
-#div-joey img {
+#p_ross{
+    background-color: #f0f4f5a1;
     height: 60%;
+    position: absolute;
+    margin-left: 23%;
+    margin-top: 130%;
+    height: 34vh;
+    width: 70vw;
+    padding: 30px;
+}
+
+#div-joey img {
+    height: 60vh;
     float: right;
     font-size: 0;
-    margin-left: 60px;
+    margin-right: 1%;
+    margin-top: 160%;
+}
+#p_joey{
+    background-color: #f0f4f5a1;
+    height: 60%;
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 160%;
+    height: 34vh;
+    width: 70vw;
+    padding: 30px;
 }
 
 /* .final {
