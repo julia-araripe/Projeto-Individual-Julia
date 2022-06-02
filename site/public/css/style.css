@@ -365,7 +365,7 @@ input {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border-right: 3px solid #32b9cd;
+  border-right: 3px solid rgb(214, 214, 0);
   background-color: #9385f1;
   /* border: 3px solid pink; */
 }
@@ -375,7 +375,7 @@ input {
   display: flex;
   width: 75%;
   height: fit-content;
-  background-color: #161618;
+  background-color: white;
   position: relative;
   top: 0;
   left: 25%;
@@ -442,6 +442,14 @@ input {
   padding: 10px 15px;
   margin-bottom: 100px;
   cursor: pointer;
+}
+
+#h3_user {
+  color: 	#4B0082;
+}
+#p_usuario {
+  color: 	#5d00a0;
+  font-weight: 600;
 }
 
 /* pagina extra - simulador */
