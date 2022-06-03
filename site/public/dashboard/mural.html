@@ -2,11 +2,11 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img-site/moldura-site.png" type="image/x-icon" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AcquaTec | Avisos</title>
+    <title>FRIENDS | GAMES</title>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./dashboards.css">
@@ -19,78 +19,85 @@
 </head>
 
 <!-- <body onload="validarSessao(), atualizarFeed()" style="background-color: #161618;"> -->
-    <!-- <body onload="validarSessao()"> -->
+<!-- <body onload="validarSessao()"> -->
 
-    <div class="janela">
+<div class="janela">
 
 
-        <div class="header-left">
+    <div class="header-left">
 
-            <div class="logo">
-                <img src="../img-site/friendslogo.png" alt="">
-             </div>
-
-            <div class="hello">
-                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
-            </div>
-
-            <div class="btn-nav-white">
-                <a href="cards.html">
-                    <h3>Usuário</h3>
-                </a>
-            </div>
-
-            <div class="btn-nav-white">
-                <a href="./dashboard.html">
-                    <h3>Personagem Favorito</h3>
-                </a>
-            </div>
-
-            <div class="btn-nav">
-                <h3>Friends Game</h3>
-            </div>
-
-            <div class="btn-logout" onclick="limparSessao()">
-                <h3>Sair</h3>
-            </div>
-
+        <div class="logo">
+            <img src="../img-site/friendslogo.png" alt="">
         </div>
 
-        <div class="dash-right">
+        <div class="hello">
+            <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+        </div>
 
-            <div class="avisos">
-                <div class="container">
-                    <h1>Publicar um aviso</h1>
-                    <div class="div-form">
-                        <form id="form_postagem" method="post" onsubmit="return publicar()">
-                            <label>
-                                Título:
-                                <br>
-                                <input name="titulo" id="titulo" maxlength="100" type="text">
-                            </label>
-                            <br>
-                            <label>
-                                Descrição (máximo de 250 caracteres):
-                                <br>
-                                <textarea name="descricao" id="textarea_descricao" maxlength="250" rows="5"></textarea>
-                            </label>
-                            <br>
-                            <button>Enviar</button>
-                        </form>
-                    </div>
-                    <h1>Mural de Avisos</h1>
-                    <div class="div-results">
-                        <div id="feed_container" class="feed-container">
-                        </div>
+        <div class="btn-nav-white">
+            <a href="cards.html">
+                <h3>Usuário</h3>
+            </a>
+        </div>
+
+        <div class="btn-nav-white">
+            <a href="./dashboard.html">
+                <h3>Personagem Favorito</h3>
+            </a>
+        </div>
+
+        <div class="btn-nav">
+            <h3>Friends Games</h3>
+        </div>
+
+        <div class="btn-logout" onclick="limparSessao()">
+            <h3>Sair</h3>
+        </div>
+
+    </div>
+
+    <div class="dash-right">
+
+        <div class="avisos">
+            <div class="container">
+                <h1>Bem-Vindo ao Friends Games</h1>
+                <h3>Escolha um ou mais jogos e divirta-se!</h3> <br>
+
+                <div class="div-form">
+
+                    <b>Qual cena icônica de Friends você e seu(sua) amigo(a) seriam?</b>
+                    <br> <br>
+                    <button onclick="descobrir()" id="buttondes">Clique aqui e descubra</button>
+                    <br> <br>
+                    <div id="div_cena"></div> <br> <br>
+
+                    ________________________________________________________________________________________________________________________
+
+                    <br> <br>
+                    <b>Você é realmente um fã de Friends? Teste aqui quanto tempo da série você já assistiu:</b> <br><br>
+                    <input placeholder="Número total de episódios assistidos" id="in_episodios" type="number">
+                    *Leve em consideração que cada episódio tem em média 22 minutos*
+                    <br> <br>
+                    <button onclick="teste_eps()" id="buttontest">Testar</button>
+                    <br> <br>
+                    <div id="div_tempo"></div>
+
+                    <br>
+
+                </div>
+                <h1>Mural de Avisos</h1>
+                <div class="div-results">
+                    <div id="feed_container" class="feed-container">
                     </div>
                 </div>
             </div>
+        </div>
 
 
 
 
-            <!-- MODAL -->
-            <!-- <div id="div_modal" class="div-modal">
+        <!-- MODAL -->
+        <!-- <div id="div_modal" class="div-modal">
                 <div id="modal_backdrop" onclick="fecharModal()" class="modal-backdrop">
                 </div>
                 <div id="modal_container" class="modal-container">
@@ -98,13 +105,13 @@
                 </div>
             </div> -->
 
-            <!-- AGUARDAR -->
-            <!-- <div id="div_aguardar" class="div-aguardar">
+        <!-- AGUARDAR -->
+        <!-- <div id="div_aguardar" class="div-aguardar">
                 <img src="./assets/aguarde-pink3.gif" id="img_aguarde">
             </div>  -->
 
-        </div>
     </div>
+</div>
 
 
 
@@ -114,8 +121,58 @@
 </html>
 
 <script>
-    
+    var cenas = ["../img-site/joey-boobs.gif", "../img-site/turkey.gif", "../img-site/oh-my-god.gif", "../img-site/ross-pants.gif", "../img-site/salmon-skin.gif", "../img-site/my-eyes.gif", "../img-site/uunagi.gif", "../img-site/rap.gif"]
+
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+
+
+    function descobrir(){
+        var contador1 = 0;
+        var contador2 = 0;
+
+        div_cena.innerHTML = ''
+
+        for (var img = 0; img < 3; img++){
+            var numero_sorteio = parseInt(Math.random()*8)
+            var numero_cena = parseInt(Math.random()*8)
+         
+            div_cena.innerHTML += `Você seria essa cena: <br> <img src='${cenas[numero_sorteio]}'> <br>`
+            div_cena.innerHTML += `E seu(sua) amigo(a) seria essa: <br> <img src='${cenas[numero_cena]}'>`
+
+            if(contador1 < 2 && contador2 < 2)
+                break
+        }
+    }
+
+
+
+    function teste_eps() {
+        var episodios = Number(in_episodios.value)
+        var qtdeps = Number(((episodios * 22) / 60).toFixed(2))
+
+        // div_tempo.innerHTML = ''
+
+        if (episodios == "") {
+            alert('Preencha o campo para que possamos validar sua identidade de fã!')
+        } else{
+
+        if (qtdeps > 50) {
+            div_tempo.innerHTML = `Você já assistiu ${qtdeps} horas da série! Você é realmente um fã de Friends!!!`
+        } else {
+            div_tempo.innerHTML = `Você assistiu apenas ${qtdeps} horas da série. Não sei se pode ser considerado um fã de Friends... `
+        }
+    }
+    }
+
+
+
+
+
+
+
+
+
+
 
     function limparFormulario() {
         document.getElementById("form_postagem").reset();
