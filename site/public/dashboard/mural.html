@@ -61,38 +61,54 @@
         <div class="avisos">
             <div class="container">
                 <h1>Bem-Vindo ao Friends Games</h1>
-                <h3>Escolha um ou mais jogos e divirta-se!</h3> <br>
+                <h3>Escolha um ou mais jogos e divirta-se!</h3>
 
                 <div class="div-form">
-
+                    __________________________________________________________________________________________________________________
+                    <br>
                     <b>Qual cena icônica de Friends você e seu(sua) amigo(a) seriam?</b>
                     <br> <br>
                     <button onclick="descobrir()" id="buttondes">Clique aqui e descubra</button>
                     <br> <br>
-                    <div id="div_cena"></div> <br> <br>
+                    <div id="div_cena"></div> <br>
 
-                    ________________________________________________________________________________________________________________________
-
-                    <br> <br>
-                    <b>Você é realmente um fã de Friends? Teste aqui quanto tempo da série você já assistiu:</b> <br><br>
+                    __________________________________________________________________________________________________________________
+                    <br>
+                    <b>Você é realmente um fã de Friends? Teste aqui quanto tempo da série você já assistiu:</b>
+                    <br><br>
                     <input placeholder="Número total de episódios assistidos" id="in_episodios" type="number">
-                    *Leve em consideração que cada episódio tem em média 22 minutos*
+                    <span style="font-size:15px;">*Leve em consideração que cada episódio tem em média 22
+                        minutos*</span>
                     <br> <br>
                     <button onclick="teste_eps()" id="buttontest">Testar</button>
                     <br> <br>
-                    <div id="div_tempo"></div>
+                    <div id="div_tempo"></div> <br>
 
+                    __________________________________________________________________________________________________________________
                     <br>
+                    <b>Escolha seu casal favorito da série de Friends e julgaremos você,
+                        baseado na sua escolha :)</b> <br><br>
+                    <div id="div_quiz">
+                        <select id="sel_casal" onchange="escolher()">
+                            <option hidden value="">Escolha o seu favorito</option>
+                            <option value="roschel">Ross e Rachel</option>
+                            <option value="mondler">Chandler e Monica</option>
+                            <option value="phoike">Phoebe e Mike</option>
+                            <option value="emiross">Ross e Emily</option>
+                            <option value="janicedler">Chandler e Janice</option>
+                            <option value="rachjoe">Rachel e Joey</option>
+                            <option value="richarmon">Richard e Monica</option>
+                            <option value="phoey">Phoebe e Joey</option>
+                            <option value="rossbeth">Ross e Elizabeth</option>
+                        </select>
+                        <br> <br>
 
-                </div>
-                <h1>Mural de Avisos</h1>
-                <div class="div-results">
-                    <div id="feed_container" class="feed-container">
+                        <div id="div_casal" class="feed-container">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
 
 
@@ -121,25 +137,25 @@
 </html>
 
 <script>
-    var cenas = ["../img-site/joey-boobs.gif", "../img-site/turkey.gif", "../img-site/oh-my-god.gif", "../img-site/ross-pants.gif", "../img-site/salmon-skin.gif", "../img-site/my-eyes.gif", "../img-site/uunagi.gif", "../img-site/rap.gif"]
 
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
 
-    function descobrir(){
+    var cenas = ["../img-site/joey-boobs.gif", "../img-site/turkey.gif", "../img-site/oh-my-god.gif", "../img-site/ross-pants.gif", "../img-site/salmon-skin.gif", "../img-site/my-eyes.gif", "../img-site/uunagi.gif", "../img-site/rap.gif"]
+    function descobrir() {
         var contador1 = 0;
         var contador2 = 0;
 
         div_cena.innerHTML = ''
 
-        for (var img = 0; img < 3; img++){
-            var numero_sorteio = parseInt(Math.random()*8)
-            var numero_cena = parseInt(Math.random()*8)
-         
-            div_cena.innerHTML += `Você seria essa cena: <br> <img src='${cenas[numero_sorteio]}'> <br>`
-            div_cena.innerHTML += `E seu(sua) amigo(a) seria essa: <br> <img src='${cenas[numero_cena]}'>`
+        for (var img = 0; img < cenas.length; img++) {
+            var numero_sorteio = parseInt(Math.random() * 8)
+            var numero_cena = parseInt(Math.random() * 8)
 
-            if(contador1 < 2 && contador2 < 2)
+            div_cena.innerHTML += `<b>Você seria essa cena:</b> <br> <img style="height:250px;"src='${cenas[numero_sorteio]}'> <br> <br>`
+            div_cena.innerHTML += `<b>E seu(sua) amigo(a) seria essa:</b> <br> <img style="height:250px;" src='${cenas[numero_cena]}'>`
+
+            if (contador1 < 2 && contador2 < 2)
                 break
         }
     }
@@ -154,19 +170,58 @@
 
         if (episodios == "") {
             alert('Preencha o campo para que possamos validar sua identidade de fã!')
-        } else{
-
-        if (qtdeps > 50) {
-            div_tempo.innerHTML = `Você já assistiu ${qtdeps} horas da série! Você é realmente um fã de Friends!!!`
         } else {
-            div_tempo.innerHTML = `Você assistiu apenas ${qtdeps} horas da série. Não sei se pode ser considerado um fã de Friends... `
+
+            if (episodios >= 500) {
+                div_tempo.innerHTML = `Você já assistiu ${episodios} episódios, ou seja, ${qtdeps} horas da série! Você é realmente um fã de Friends!!!`
+            }
+            if (episodios >= 300 && episodios < 500) {
+                div_tempo.innerHTML = `Você assistiu ${episodios} episódios, ou seja, ${qtdeps} horas da série. É um bom fã de Friends!`
+            }
+            if (episodios == 236) {
+                div_tempo.innerHTML = `Você assistiu ${episodios} episódios, ou seja, ${qtdeps} horas da série. Assistiu a uma temporada inteira, é um fãzinho.`
+            }
+            if (episodios > 0 && episodios < 236) {
+                div_tempo.innerHTML = `Você assistiu ${episodios} episódios, ou seja, ${qtdeps} horas da série, não chega nem a ser fã direito. Que decepção...`
+            }
         }
     }
+
+
+    var casais = ["../img-site/roschel-casal.jpg", "../img-site/mondler-casal2.jpg", "../img-site/phoebemike-casal.jpg", "../img-site/rossemily-casal.jpg", "../img-site/janicechandler-casal.jpg", "../img-site/racheljoey-casal2.jpg", "../img-site/richardmon-casal.jpg", "../img-site/phoebejoey-casal.jpg", "../img-site/rossbeth-casal.jpg"]
+
+    function escolher() {
+        var casal = sel_casal.value
+        div_casal.innerHTML = ''
+
+        if (casal == "roschel") {
+            div_casal.innerHTML = `<img style="height:350px;" src = "${casais[0]}"> <br> <b>Você optou pelo tradicional. Bonitinho e fofo, levemente abusivo, mas é o casal principal! Química incrível!`
+        }
+        if (casal == "mondler") {
+            div_casal.innerHTML = `<img style="height:350px;" src = "${casais[1]}"> <br> <b>SIMPLESMENTE O MELHOR CASAL DA SÉRIE E NADA ACIMA DELES <3</B>`
+        }
+        if (casal == "phoike") {
+            div_casal.innerHTML = `<img style="height:350px;" src = "${casais[2]}"> <br> <b>Coisa mais linda esses dois, excelente escolha, excelente química!!</b>`
+        }
+        if (casal == "emiross") {
+            div_casal.innerHTML = `<img style="height:350px;" src = "${casais[3]}"> <br> <b>Acho que você deve ter alguma falha de caráter para esse ser o seu casal favorito...</b>`
+        }
+        if (casal == "janicedler") {
+            div_casal.innerHTML = `<img style="height:350px;" src = "${casais[4]}"> <br> <b>Pelo amor de Deus... Escolha melhor, já foi o tempo.</b>`
+        }
+        if (casal == "rachjoe") {
+            div_casal.innerHTML = `<img style="height:350px;" src = "${casais[5]}"> <br> <b>Escolha meio sem química, porque a amizade é mais forte que tudo aí.</b>`
+        }
+        if (casal == "richarmon") {
+            div_casal.innerHTML = `<img style="height:350px;" src = "${casais[6]}"> <br> <b>Escolha bem OK. Relação bonitinha porém problemática demais...</b>`
+        }
+        if (casal == "phoey") {
+            div_casal.innerHTML = `<img style="height:350px;" src = "${casais[7]}"> <br> <b>Boa escolha, dariam um casal lindo, mas não foi bem assim.</b>`
+        }
+        if (casal == "rossbeth") {
+            div_casal.innerHTML = `<img style="height:350px;" src = "${casais[8]}"> <br> <b>Você tem certeza da sua escolha?</b>`
+        }
     }
-
-
-
-
 
 
 

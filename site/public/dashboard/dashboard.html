@@ -28,7 +28,7 @@
         <div class="header-left">
             <div class="logo">
                 <img src="../img-site/friendslogo.png" alt="">
-             </div>
+            </div>
 
             <div class="hello">
                 <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
@@ -61,10 +61,11 @@
         <div class="dash">
             <div class="btns-dash">
                 <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  -->
-                <button class="btn-chart btn-pink" onclick="obterDadosGrafico(1)">Aquario 1</button>
-                <button class="btn-chart btn-white" onclick="obterDadosGrafico(2)">Aquario 2</button>
+                <button class="btn-chart btn-pink" onclick="obterDadosGrafico(1)">Resultados da Votação de Personagem
+                    Favorito</button>
+                <!-- <button class="btn-chart btn-white" onclick="obterDadosGrafico(2)">Aquario 2</button>
                 <button class="btn-chart btn-white" onclick="obterDadosGrafico(3)">Aquario 3</button>
-                <button class="btn-chart btn-white" onclick="obterDadosGrafico(4)">Aquario 4</button>
+                <button class="btn-chart btn-white" onclick="obterDadosGrafico(4)">Aquario 4</button> -->
             </div>
             <div>
                 <h3 class="tituloGraficos">
@@ -94,7 +95,7 @@
 
     function alterarTitulo(idAquario) {
         var tituloAquario = document.getElementById("tituloAquario")
-        tituloAquario.innerHTML = "Últimas medidas de Temperatura e Umidade do <span style='color: #e6005a'>Aquário " + idAquario + "</span>"
+        tituloAquario.innerHTML = "Últimos resultados de qual é o personagem favorito de Friends mais votado <span style='color: #e6005a'> " + idAquario + "</span>"
     }
 
     // O gráfico é construído com três funções:
@@ -232,10 +233,10 @@
                     // tirando e colocando valores no gráfico
                     dados.labels.shift(); // apagar o primeiro
                     dados.labels.push(novoRegistro[0].momento_grafico); // incluir um novo momento
-                    
+
                     dados.datasets[0].data.shift();  // apagar o primeiro de umidade
                     dados.datasets[0].data.push(novoRegistro[0].umidade); // incluir uma nova medida de umidade
-                    
+
                     dados.datasets[1].data.shift();  // apagar o primeiro de temperatura
                     dados.datasets[1].data.push(novoRegistro[0].temperatura); // incluir uma nova medida de temperatura
 

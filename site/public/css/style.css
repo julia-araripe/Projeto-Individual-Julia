@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+body {
   margin: 0px;
   background-image: linear-gradient(to bottom, #e4e5e6, #9370db 80%);
   font-family: sans-serif;
@@ -8,8 +8,8 @@ body{
 }
 
 
-.header{
-  background-color:	#9385f1;
+.header {
+  background-color: #9385f1;
   display: flex;
   position: fixed;
   width: 100vw;
@@ -18,13 +18,13 @@ body{
   height: 14vh;
 }
 
-.container{
+.container {
   width: 60vw;
   display: flex;
   margin: 0 auto;
 }
 
-header .container{
+header .container {
   align-items: center;
   justify-content: center;
 }
@@ -39,25 +39,23 @@ header .container{
 } */
 
 .logo img {
-  width: 186px;
-  height: 140px;
-  padding-right: 450px;
-  margin-left: -85px;
-  margin-top: -15px;
+    width: 186px;
+    height: 140px;
+    padding-right: 365px;
 }
 
-.navbar{
+.navbar {
   list-style: none;
   display: flex;
   align-items: center;
   padding: 0;
 }
 
-.navbar li{
+.navbar li {
   display: flex;
 }
 
-.navbar li a{
+.navbar li a {
   color: #ffffff;
   text-decoration: none;
   font-size: 1em;
@@ -65,13 +63,13 @@ header .container{
   margin-right: 3vw;
 }
 
-.navbar li :hover{
+.navbar li :hover {
   color: yellow;
   font-size: 1.2em;
   transition: 0.6s;
 }
 
-.navbar li :active{
+.navbar li :active {
   color: #8B008B;
   font-size: 1.1em;
   transition: 0.2s;
@@ -96,7 +94,7 @@ header .container{
   align-items: center;
 }
 
-.tamanho-conteudo { 
+.tamanho-conteudo {
   height: fit-content !important;
 }
 
@@ -154,20 +152,20 @@ header .container{
 
 /* FOOTER */
 
-footer{
+footer {
   background-color: #363636;
   width: 100vw;
   height: 40vh;
   display: flex
 }
 
-.conteudo_footer{
+.conteudo_footer {
   color: white;
   display: flex;
   position: relative;
 }
 
-.conteudo_footer a{
+.conteudo_footer a {
   font-style: italic;
   font-size: 0.8em;
   color: white;
@@ -175,7 +173,7 @@ footer{
   text-align: center;
 }
 
-.titulos_footer{
+.titulos_footer {
   text-align: center;
   text-transform: uppercase;
   font-size: 0.9em;
@@ -184,14 +182,14 @@ footer{
 }
 
 
-.abertura{
+.abertura {
   display: flex;
   flex-direction: column;
   padding-top: 5vh;
   padding-left: 10vw;
 }
 
-.barra{
+.barra {
   width: 12vw;
   height: 0.5vh;
   background-color: #6f36d8;
@@ -199,12 +197,12 @@ footer{
   margin-bottom: 5%;
 }
 
-.logo_footer{
- position: absolute;
- margin-left: 44vw;
+.logo_footer {
+  position: absolute;
+  margin-left: 44vw;
 }
 
-.logo_footer img{
+.logo_footer img {
   width: 15vw;
   height: 25vh;
   align-items: center;
@@ -214,16 +212,16 @@ footer{
   margin-top: 6%;
 }
 
-.logo_footer p{
+.logo_footer p {
   display: flex;
   font-size: 1.2em;
   font-weight: 200;
   font-style: italic;
   margin-top: 2vh;
   margin-left: -14%;
-} 
+}
 
-.conteudos{
+.conteudos {
   display: flex;
   flex-direction: column;
   padding-top: 6vh;
@@ -269,7 +267,7 @@ button {
 
 /* FORMULARIO */
 
-.alerta_erro{
+.alerta_erro {
   display: flex;
   justify-content: flex-end;
 }
@@ -288,7 +286,7 @@ button {
   z-index: 1;
 }
 
-.card_erro #mensagem_erro{
+.card_erro #mensagem_erro {
   font-weight: 500;
   font-size: 20px;
 }
@@ -369,7 +367,8 @@ input {
   background-color: #9385f1;
   /* border: 3px solid pink; */
 }
-  /* background-color: #895fc0; */
+
+/* background-color: #895fc0; */
 
 .dash-right {
   display: flex;
@@ -404,7 +403,7 @@ input {
 .btn-nav {
   width: 40%;
   color: white;
-  background-color:	#8A2BE2;
+  background-color: #8A2BE2;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
@@ -413,14 +412,14 @@ input {
 .btn-nav-white {
   width: 40%;
   background-color: white;
-  border: 3px solid 	#8A2BE2;
+  border: 3px solid #8A2BE2;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
 }
 
 .btn-nav-white h3 {
-  color: 	#8A2BE2;
+  color: #8A2BE2;
   padding: 0;
   margin: 0;
 }
@@ -445,10 +444,11 @@ input {
 }
 
 #h3_user {
-  color: 	#4B0082;
+  color: #4B0082;
 }
+
 #p_usuario {
-  color: 	#5d00a0;
+  color: #5d00a0;
   font-weight: 600;
 }
 
