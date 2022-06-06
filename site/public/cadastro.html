@@ -79,12 +79,12 @@
                     <span class="tipo_campo">Vote no seu personagem favorito:</span>
                     <select id="sel_favorito">
                         <option hidden value="">Vote no seu favorito</option>
-                        <option value="rachel">Rachel Green</option>
-                        <option value="monica">Monica Geller</option>
-                        <option value="phoebe">Phoebe Buffay</option>
-                        <option value="joey">Joey Tribbiani</option>
-                        <option value="chandler">Chandler Bing</option>
-                        <option value="ross">Ross Geller</option>
+                        <option value="1">Rachel Green</option>
+                        <option value="2">Monica Geller</option>
+                        <option value="3">Phoebe Buffay</option>
+                        <option value="4">Joey Tribbiani</option>
+                        <option value="5">Chandler Bing</option>
+                        <option value="6">Ross Geller</option>
                     </select>
 
                     <button class="btn" onclick="cadastrar()">Cadastrar</button>
@@ -134,7 +134,7 @@
 
 <script>
     function cadastrar() {
-        aguardar();
+        //aguardar();
 
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
@@ -142,9 +142,9 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
-        var favoritoVar = sel_favorito.value;
+        var fkVotacaoVar = sel_favorito.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || favoritoVar == "") {
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || fkVotacaoVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Por favor, preencha todos os campos para efetuar o cadastro!";
 
@@ -167,7 +167,7 @@
                 nomeServer: nomeVar,
                 emailServer: emailVar,
                 senhaServer: senhaVar,
-                favoritoServer: favoritoVar
+                fkVotacaoServer: fkVotacaoVar
             })
         }).then(function (resposta) {
 
