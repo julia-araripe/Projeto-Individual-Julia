@@ -76,6 +76,17 @@
                     <span class="tipo_campo">Confirmação da Senha:</span>
                     <input id="confirmacao_senha_input" type="password" placeholder="******">
 
+                    <span class="tipo_campo">Vote no seu personagem favorito:</span>
+                    <select id="sel_favorito">
+                        <option hidden value="">Vote no seu favorito</option>
+                        <option value="rachel">Rachel Green</option>
+                        <option value="monica">Monica Geller</option>
+                        <option value="phoebe">Phoebe Buffay</option>
+                        <option value="joey">Joey Tribbiani</option>
+                        <option value="chandler">Chandler Bing</option>
+                        <option value="ross">Ross Geller</option>
+                    </select>
+
                     <button class="btn" onclick="cadastrar()">Cadastrar</button>
 
                 </div>
@@ -131,8 +142,9 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var favoritoVar = sel_favorito.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || favoritoVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Por favor, preencha todos os campos para efetuar o cadastro!";
 
@@ -154,7 +166,8 @@
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nomeVar,
                 emailServer: emailVar,
-                senhaServer: senhaVar
+                senhaServer: senhaVar,
+                favoritoServer: favoritoVar
             })
         }).then(function (resposta) {
 

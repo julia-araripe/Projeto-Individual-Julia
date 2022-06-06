@@ -11,7 +11,7 @@ body {
   color: rgb(255, 255, 255);
   font-family: "Exo 2", sans-serif;
   font-size: 18px;
-  background-color: rgb(224, 224, 26);
+  background-color: rgb(202, 202, 33);
 }
 
 
@@ -132,7 +132,6 @@ body {
   width: 100%;
 }
 
-
 .div_casal .feed-container {
   background-color: #212124;
   border-radius: 5px;
@@ -159,7 +158,8 @@ body {
   position: relative;
   top: 0;
   left: 25%;
-  background-color: rgb(224, 224, 26);
+  /* background-color: rgb(224, 224, 26); */
+  background-color: #b8aff5;
   padding: 1%;
 
   /* width: 75%;
@@ -170,6 +170,14 @@ body {
     justify-content: space-around;*/
   height: 100vh;
 }
+
+#p_ep1{
+  margin-left: 8%;
+  margin-right: 12%;
+}
+
+/* background-color: #aa94db; */
+/* #9385f1 */
 
 /* .regua {
   display: flex;
