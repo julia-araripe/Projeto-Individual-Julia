@@ -28,11 +28,10 @@ header .container{
 }
 
 .logo img {
-    width: 186px;
-    height: 140px;
-    padding-right: 450px;
+    height: 20vh;
+    padding-right: 435px;
     margin-left: -85px;
-    margin-top: -15px;
+    margin-top: -11px;
 }
 
 .navbar{
@@ -140,6 +139,8 @@ main {
     height: 34vh;
     width: 70vw;
     padding: 30px;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #div-rachel img {
@@ -157,6 +158,8 @@ main {
     height: 34vh;
     width: 70vw;
     padding: 30px;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #div-phoebe img {
@@ -174,14 +177,10 @@ main {
     height: 34vh;
     width: 70vw;
     padding: 30px;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* .polaroids2 {
-    display: flex;
-    font-size: 0;
-    padding-right: -55px;
-    margin-top: -15%;
-} */
 
 #div-chandler img {
     height: 60%;
@@ -198,6 +197,8 @@ main {
     height: 34vh;
     width: 70vw;
     padding: 30px;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #div-ross img {
@@ -217,6 +218,8 @@ main {
     height: 34vh;
     width: 70vw;
     padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
 }
 
 #div-joey img {
@@ -235,6 +238,8 @@ main {
     height: 34vh;
     width: 70vw;
     padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
 }
 
 /* .final {

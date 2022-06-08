@@ -348,8 +348,14 @@ input {
 
 .logo img {
   height: 20vh;
-  margin-left: 35%;
-  margin-top: 15px;
+  margin-left: -15%;
+  margin-top: -11px;
+}
+
+.logo_ img {
+  height: 23vh;
+  margin-top: 35px;
+  margin-bottom: -60px;
 }
 
 .janela {
