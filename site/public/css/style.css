@@ -258,7 +258,10 @@ footer {
 }
 
 .banner #div_erros_login {
+  font-weight: bolder;
   margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 
 button {
